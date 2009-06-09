@@ -1,7 +1,0 @@
-GIT_URI="http://www.gnome.org/~jjongsma/git/webkitmm.git/"
-PATCH_URI="0.9.90-build.patch"
-inherit gtkmm git
-
-# required for SVN/Git builds
-DIFF_EXCLUDES="*.cc *.h .stamps"
-CYGCONF_ARGS="--enable-maintainer-mode"
