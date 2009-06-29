@@ -1,5 +1,5 @@
 category: Gnome
-requires: cygwin libatkmm1.6_1 libgcc1 libglib2.0_0 libglibmm2.4_1 libgtkmm2.4_1 libsigc2.0_0 libstdc++6 libwebkit1.0_2
+requires: libatkmm1.6_1 libgcc1 libglib2.0_0 libglibmm2.4_1 libgtkmm2.4_1 libsigc2.0_0 libstdc++6 libwebkit1.0_2
 external-source: webkitmm1.0
 sdesc: "C++ WebKit/GTK+ bindings (runtime)"
 ldesc: "The webkitmm project provides C++ bindings for Webkit/GTK+. This 
