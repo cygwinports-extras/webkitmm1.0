@@ -5,28 +5,29 @@ you a comfortable C++ API and allows webkit to be integrated seamlessly
 with gtkmm.
 
 Runtime requirements:
-  cygwin-1.7.0-48
-  libatkmm1.6_1-2.16.0-1
-  libgcc1-4.3.2-2
-  libglib2.0_0-2.20.3-1
-  libglibmm2.4_1-2.20.0-1
-  libgtkmm2.4_1-2.16.0-1
-  libsigc2.0_0-2.2.3-10
-  libstdc++6-4.3.2-2
-  libwebkit1.0_2-1.1.8-1
+  cygwin-1.7.0-62
+  libatkmm1.6_1-2.18.2-1
+  libgcc1-4.3.4-1
+  libglib2.0_0-2.22.2-1
+  libglibmm2.4_1-2.22.1-1
+  libgtkmm2.4_1-2.18.2-1
+  libsigc2.0_0-2.2.4.2-1
+  libstdc++6-4.3.4-1
+  libwebkit1.0_2-1.1.15.3-1
 
 Build requirements:
 (besides corresponding -devel packages)
   autoconf2.5-2.63-10
-  automake1.9-1.9.6-10
-  binutils-20080624-2
-  cygport-0.9.7-1
-  gawk-3.1.6-2
-  gcc4-core-4.3.2-2
-  gcc4-g++-4.3.2-2
-  libtool-2.2.7a-12
-  m4-1.4.13-1
+  automake1.11-1.11-10
+  binutils-2.19.51-1
+  cygport-0.9.10-1
+  doxygen-1.5.5-1
+  gawk-3.1.7-1
+  gcc4-core-4.3.4-1
+  gcc4-g++-4.3.4-1
+  libtool-2.2.7a-14
   make-3.81-2
+  mm-common-0.8-1
   perl-5.10.0-5
   pkg-config-0.23b-10
   sed-4.1.5-2
@@ -40,193 +41,24 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack webkitmm1.0-1.1.6-X-src.tar.bz2
+  unpack webkitmm1.0-1.1.6.1-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./webkitmm1.0-1.1.6-X.cygport all
+  cygport ./webkitmm1.0-1.1.6.1-X.cygport all
 
 This will create:
-  /usr/src/libwebkitmm1.0-devel-1.1.6-X.tar.bz2
-  /usr/src/libwebkitmm1.0_0-1.1.6-X.tar.bz2
-  /usr/src/webkitmm1.0-1.1.6-X-src.tar.bz2
+  /usr/src/libwebkitmm1.0-devel-1.1.6.1-X.tar.bz2
+  /usr/src/libwebkitmm1.0-doc-1.1.6.1-X.tar.bz2
+  /usr/src/libwebkitmm1.0_0-1.1.6.1-X.tar.bz2
+  /usr/src/webkitmm1.0-1.1.6.1-X-src.tar.bz2
 
 -------------------------------------------
 
-Files included in the binary packages:
-
-(libwebkitmm1.0_0)
-  /usr/bin/cygwebkitmm-1.0-0.dll
-  /usr/share/doc/webkitmm1.0/AUTHORS
-  /usr/share/doc/webkitmm1.0/COPYING
-  /usr/share/doc/webkitmm1.0/ChangeLog
-  /usr/share/doc/webkitmm1.0/MAINTAINERS
-  /usr/share/doc/webkitmm1.0/NEWS
-  /usr/share/doc/webkitmm1.0/README
-  /usr/share/doc/webkitmm1.0/TODO
-
-(libwebkitmm1.0-devel)
-  /usr/include/webkitmm-1.0/webkitmm.h
-  /usr/include/webkitmm-1.0/webkitmm/download.h
-  /usr/include/webkitmm-1.0/webkitmm/init.h
-  /usr/include/webkitmm-1.0/webkitmm/networkrequest.h
-  /usr/include/webkitmm-1.0/webkitmm/private/download_p.h
-  /usr/include/webkitmm-1.0/webkitmm/private/networkrequest_p.h
-  /usr/include/webkitmm-1.0/webkitmm/private/webbackforwardlist_p.h
-  /usr/include/webkitmm-1.0/webkitmm/private/webframe_p.h
-  /usr/include/webkitmm-1.0/webkitmm/private/webhistoryitem_p.h
-  /usr/include/webkitmm-1.0/webkitmm/private/webinspector_p.h
-  /usr/include/webkitmm-1.0/webkitmm/private/webnavigationaction_p.h
-  /usr/include/webkitmm-1.0/webkitmm/private/webpolicydecision_p.h
-  /usr/include/webkitmm-1.0/webkitmm/private/websettings_p.h
-  /usr/include/webkitmm-1.0/webkitmm/private/webview_p.h
-  /usr/include/webkitmm-1.0/webkitmm/private/webwindowfeatures_p.h
-  /usr/include/webkitmm-1.0/webkitmm/webbackforwardlist.h
-  /usr/include/webkitmm-1.0/webkitmm/webframe.h
-  /usr/include/webkitmm-1.0/webkitmm/webhistoryitem.h
-  /usr/include/webkitmm-1.0/webkitmm/webinspector.h
-  /usr/include/webkitmm-1.0/webkitmm/webnavigationaction.h
-  /usr/include/webkitmm-1.0/webkitmm/webpolicydecision.h
-  /usr/include/webkitmm-1.0/webkitmm/websettings.h
-  /usr/include/webkitmm-1.0/webkitmm/webview.h
-  /usr/include/webkitmm-1.0/webkitmm/webwindowfeatures.h
-  /usr/include/webkitmm-1.0/webkitmm/wrap_init.h
-  /usr/lib/libwebkitmm-1.0.dll.a
-  /usr/lib/libwebkitmm-1.0.la
-  /usr/lib/pkgconfig/webkitmm-1.0.pc
-  /usr/lib/webkitmm-1.0/include/webkitmmconfig.h
-  /usr/lib/webkitmm-1.0/proc/m4/convert.m4
-  /usr/lib/webkitmm-1.0/proc/m4/convert_webkitmm.m4
-  /usr/share/doc/webkitmm1.0/html/annotated.html
-  /usr/share/doc/webkitmm1.0/html/classGlib_1_1Object.html
-  /usr/share/doc/webkitmm1.0/html/classGlib_1_1Object__inherit__graph.dot
-  /usr/share/doc/webkitmm1.0/html/classGtk_1_1Container.html
-  /usr/share/doc/webkitmm1.0/html/classGtk_1_1Container__inherit__graph.dot
-  /usr/share/doc/webkitmm1.0/html/classWebKit_1_1Download-members.html
-  /usr/share/doc/webkitmm1.0/html/classWebKit_1_1Download.html
-  /usr/share/doc/webkitmm1.0/html/classWebKit_1_1Download__inherit__graph.dot
-  /usr/share/doc/webkitmm1.0/html/classWebKit_1_1NetworkRequest-members.html
-  /usr/share/doc/webkitmm1.0/html/classWebKit_1_1NetworkRequest.html
-  /usr/share/doc/webkitmm1.0/html/classWebKit_1_1NetworkRequest__inherit__graph.dot
-  /usr/share/doc/webkitmm1.0/html/classWebKit_1_1WebBackForwardList-members.html
-  /usr/share/doc/webkitmm1.0/html/classWebKit_1_1WebBackForwardList.html
-  /usr/share/doc/webkitmm1.0/html/classWebKit_1_1WebBackForwardList__inherit__graph.dot
-  /usr/share/doc/webkitmm1.0/html/classWebKit_1_1WebFrame-members.html
-  /usr/share/doc/webkitmm1.0/html/classWebKit_1_1WebFrame.html
-  /usr/share/doc/webkitmm1.0/html/classWebKit_1_1WebFrame__inherit__graph.dot
-  /usr/share/doc/webkitmm1.0/html/classWebKit_1_1WebHistoryItem-members.html
-  /usr/share/doc/webkitmm1.0/html/classWebKit_1_1WebHistoryItem.html
-  /usr/share/doc/webkitmm1.0/html/classWebKit_1_1WebHistoryItem__inherit__graph.dot
-  /usr/share/doc/webkitmm1.0/html/classWebKit_1_1WebInspector-members.html
-  /usr/share/doc/webkitmm1.0/html/classWebKit_1_1WebInspector.html
-  /usr/share/doc/webkitmm1.0/html/classWebKit_1_1WebInspector__inherit__graph.dot
-  /usr/share/doc/webkitmm1.0/html/classWebKit_1_1WebNavigationAction-members.html
-  /usr/share/doc/webkitmm1.0/html/classWebKit_1_1WebNavigationAction.html
-  /usr/share/doc/webkitmm1.0/html/classWebKit_1_1WebNavigationAction__inherit__graph.dot
-  /usr/share/doc/webkitmm1.0/html/classWebKit_1_1WebPolicyDecision-members.html
-  /usr/share/doc/webkitmm1.0/html/classWebKit_1_1WebPolicyDecision.html
-  /usr/share/doc/webkitmm1.0/html/classWebKit_1_1WebPolicyDecision__inherit__graph.dot
-  /usr/share/doc/webkitmm1.0/html/classWebKit_1_1WebSettings-members.html
-  /usr/share/doc/webkitmm1.0/html/classWebKit_1_1WebSettings.html
-  /usr/share/doc/webkitmm1.0/html/classWebKit_1_1WebSettings__inherit__graph.dot
-  /usr/share/doc/webkitmm1.0/html/classWebKit_1_1WebView-members.html
-  /usr/share/doc/webkitmm1.0/html/classWebKit_1_1WebView.html
-  /usr/share/doc/webkitmm1.0/html/classWebKit_1_1WebView__inherit__graph.dot
-  /usr/share/doc/webkitmm1.0/html/classWebKit_1_1WebWindowFeatures-members.html
-  /usr/share/doc/webkitmm1.0/html/classWebKit_1_1WebWindowFeatures.html
-  /usr/share/doc/webkitmm1.0/html/classWebKit_1_1WebWindowFeatures__inherit__graph.dot
-  /usr/share/doc/webkitmm1.0/html/classes.html
-  /usr/share/doc/webkitmm1.0/html/dir_6f24d19be9c1efb9bb24f98472ad6640.html
-  /usr/share/doc/webkitmm1.0/html/dir_6f24d19be9c1efb9bb24f98472ad6640_dep.dot
-  /usr/share/doc/webkitmm1.0/html/dir_7e1e4898c16f3fcb29dc0d25d36a1db2.html
-  /usr/share/doc/webkitmm1.0/html/dir_7e1e4898c16f3fcb29dc0d25d36a1db2_dep.dot
-  /usr/share/doc/webkitmm1.0/html/dir_91c6f2b3c6ae70866c2c26347b24f54b.html
-  /usr/share/doc/webkitmm1.0/html/dir_91c6f2b3c6ae70866c2c26347b24f54b_dep.dot
-  /usr/share/doc/webkitmm1.0/html/dir_d6ae6fba76008630d5afdfd3584a55e7.html
-  /usr/share/doc/webkitmm1.0/html/dir_d6ae6fba76008630d5afdfd3584a55e7_dep.dot
-  /usr/share/doc/webkitmm1.0/html/dir_f874bb7d4402a5751ffa6e637f107a53.html
-  /usr/share/doc/webkitmm1.0/html/dir_f874bb7d4402a5751ffa6e637f107a53_dep.dot
-  /usr/share/doc/webkitmm1.0/html/dirs.html
-  /usr/share/doc/webkitmm1.0/html/download_8h.html
-  /usr/share/doc/webkitmm1.0/html/doxygen.css
-  /usr/share/doc/webkitmm1.0/html/doxygen.png
-  /usr/share/doc/webkitmm1.0/html/files.html
-  /usr/share/doc/webkitmm1.0/html/functions.html
-  /usr/share/doc/webkitmm1.0/html/functions_0x63.html
-  /usr/share/doc/webkitmm1.0/html/functions_0x64.html
-  /usr/share/doc/webkitmm1.0/html/functions_0x65.html
-  /usr/share/doc/webkitmm1.0/html/functions_0x66.html
-  /usr/share/doc/webkitmm1.0/html/functions_0x67.html
-  /usr/share/doc/webkitmm1.0/html/functions_0x68.html
-  /usr/share/doc/webkitmm1.0/html/functions_0x69.html
-  /usr/share/doc/webkitmm1.0/html/functions_0x6c.html
-  /usr/share/doc/webkitmm1.0/html/functions_0x6d.html
-  /usr/share/doc/webkitmm1.0/html/functions_0x6e.html
-  /usr/share/doc/webkitmm1.0/html/functions_0x6f.html
-  /usr/share/doc/webkitmm1.0/html/functions_0x70.html
-  /usr/share/doc/webkitmm1.0/html/functions_0x72.html
-  /usr/share/doc/webkitmm1.0/html/functions_0x73.html
-  /usr/share/doc/webkitmm1.0/html/functions_0x74.html
-  /usr/share/doc/webkitmm1.0/html/functions_0x75.html
-  /usr/share/doc/webkitmm1.0/html/functions_0x77.html
-  /usr/share/doc/webkitmm1.0/html/functions_0x7a.html
-  /usr/share/doc/webkitmm1.0/html/functions_0x7e.html
-  /usr/share/doc/webkitmm1.0/html/functions_enum.html
-  /usr/share/doc/webkitmm1.0/html/functions_eval.html
-  /usr/share/doc/webkitmm1.0/html/functions_func.html
-  /usr/share/doc/webkitmm1.0/html/functions_func_0x63.html
-  /usr/share/doc/webkitmm1.0/html/functions_func_0x64.html
-  /usr/share/doc/webkitmm1.0/html/functions_func_0x65.html
-  /usr/share/doc/webkitmm1.0/html/functions_func_0x66.html
-  /usr/share/doc/webkitmm1.0/html/functions_func_0x67.html
-  /usr/share/doc/webkitmm1.0/html/functions_func_0x68.html
-  /usr/share/doc/webkitmm1.0/html/functions_func_0x69.html
-  /usr/share/doc/webkitmm1.0/html/functions_func_0x6c.html
-  /usr/share/doc/webkitmm1.0/html/functions_func_0x6d.html
-  /usr/share/doc/webkitmm1.0/html/functions_func_0x6e.html
-  /usr/share/doc/webkitmm1.0/html/functions_func_0x6f.html
-  /usr/share/doc/webkitmm1.0/html/functions_func_0x70.html
-  /usr/share/doc/webkitmm1.0/html/functions_func_0x72.html
-  /usr/share/doc/webkitmm1.0/html/functions_func_0x73.html
-  /usr/share/doc/webkitmm1.0/html/functions_func_0x75.html
-  /usr/share/doc/webkitmm1.0/html/functions_func_0x77.html
-  /usr/share/doc/webkitmm1.0/html/functions_func_0x7a.html
-  /usr/share/doc/webkitmm1.0/html/functions_func_0x7e.html
-  /usr/share/doc/webkitmm1.0/html/globals.html
-  /usr/share/doc/webkitmm1.0/html/globals_defs.html
-  /usr/share/doc/webkitmm1.0/html/graph_legend.dot
-  /usr/share/doc/webkitmm1.0/html/graph_legend.html
-  /usr/share/doc/webkitmm1.0/html/group__webkitmmEnums.html
-  /usr/share/doc/webkitmm1.0/html/hierarchy.html
-  /usr/share/doc/webkitmm1.0/html/index.html
-  /usr/share/doc/webkitmm1.0/html/inherit__graph__0.dot
-  /usr/share/doc/webkitmm1.0/html/inherits.html
-  /usr/share/doc/webkitmm1.0/html/init_8h.html
-  /usr/share/doc/webkitmm1.0/html/modules.html
-  /usr/share/doc/webkitmm1.0/html/namespaceGlib.html
-  /usr/share/doc/webkitmm1.0/html/namespaceGtk.html
-  /usr/share/doc/webkitmm1.0/html/namespaceWebKit.html
-  /usr/share/doc/webkitmm1.0/html/namespacemembers.html
-  /usr/share/doc/webkitmm1.0/html/namespacemembers_enum.html
-  /usr/share/doc/webkitmm1.0/html/namespacemembers_eval.html
-  /usr/share/doc/webkitmm1.0/html/namespacemembers_func.html
-  /usr/share/doc/webkitmm1.0/html/namespaces.html
-  /usr/share/doc/webkitmm1.0/html/networkrequest_8h.html
-  /usr/share/doc/webkitmm1.0/html/tabs.css
-  /usr/share/doc/webkitmm1.0/html/webbackforwardlist_8h.html
-  /usr/share/doc/webkitmm1.0/html/webframe_8h.html
-  /usr/share/doc/webkitmm1.0/html/webhistoryitem_8h.html
-  /usr/share/doc/webkitmm1.0/html/webinspector_8h.html
-  /usr/share/doc/webkitmm1.0/html/webkitmmconfig_8h.html
-  /usr/share/doc/webkitmm1.0/html/webnavigationaction_8h.html
-  /usr/share/doc/webkitmm1.0/html/webpolicydecision_8h.html
-  /usr/share/doc/webkitmm1.0/html/websettings_8h.html
-  /usr/share/doc/webkitmm1.0/html/webview_8h.html
-  /usr/share/doc/webkitmm1.0/html/webwindowfeatures_8h.html
-
-------------------
-
 Port Notes:
+
+----- version 1.1.6.1-1 -----
+Updated git snapshot.
 
 ----- version 1.1.6-1 -----
 Initial release for Cygwin 1.7.

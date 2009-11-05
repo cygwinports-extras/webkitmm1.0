@@ -1,0 +1,13 @@
+git-send-email'ed to author
+
+--- origsrc/webkitmm/configure.ac	2009-11-05 03:49:36.000000000 -0600
++++ src/webkitmm/configure.ac	2009-11-05 03:53:17.348737800 -0600
+@@ -70,7 +70,7 @@ MM_ARG_ENABLE_DOCUMENTATION
+ MM_ARG_WITH_TAGFILE_DOC([libstdc++.tag], [mm-common-libstdc++])
+ MM_ARG_WITH_TAGFILE_DOC([libsigc++-2.0.tag], [sigc++-2.0])
+ MM_ARG_WITH_TAGFILE_DOC([glibmm-2.4.tag], [glibmm-2.4])
+-MM_ARG_WITH_TAGFILE_DOC([ggtkmm-2.4.tag], [gtkmm-2.4])
++MM_ARG_WITH_TAGFILE_DOC([gtkmm-2.4.tag], [gtkmm-2.4])
+ 
+ MM_PKG_CONFIG_SUBST([GMMPROC_DIR], [--variable=gmmprocdir glibmm-2.4])
+ 

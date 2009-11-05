@@ -1,0 +1,7 @@
+category: Gnome Doc
+requires: libglibmm2.4-doc libgtkmm2.4-doc
+external-source: webkitmm1.0
+sdesc: "C++ WebKit/GTK+ bindings (API documentation)"
+ldesc: "The webkitmm project provides C++ bindings for Webkit/GTK+. This 
+gives you a comfortable C++ API and allows webkit to be integrated 
+seamlessly with gtkmm."

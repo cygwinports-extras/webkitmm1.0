@@ -1,0 +1,26 @@
+GIT_MODULE="webkitmm"
+GIT_URI="git://gitorious.org/webkitmm/mainline.git"
+inherit gtkmm git
+
+PATCH_URI="1.1.6.1-doc-tagfile.patch"
+
+PKG_NAMES="${PN} libwebkitmm1.0_0 libwebkitmm1.0-devel libwebkitmm1.0-doc"
+libwebkitmm1_0_0_CONTENTS="--exclude=webkitmm-1.0 usr/bin/cygwebkitmm-1.0-0.dll usr/share/doc/"
+libwebkitmm1_0_devel_CONTENTS="usr/include/ usr/lib/"
+libwebkitmm1_0_doc_CONTENTS="usr/share/devhelp/ usr/share/doc/webkitmm-1.0/"
+
+# required for SVN/Git builds
+DIFF_EXCLUDES="*.cc *.h .stamps"
+
+src_compile() {
+	cd ${S}
+	mm-common-prepare --copy --force
+	cygautoreconf
+	cd ${B}
+	gtkmm_compile
+}
+
+
+
+CYGCONF_ARGS="--enable-maintainer-mode"
+MAKEOPTS+=" htmldir=\$(docdir)/html"
